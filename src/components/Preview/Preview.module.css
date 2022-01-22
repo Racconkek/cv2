@@ -1,0 +1,50 @@
+.preview {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.headline {
+    position: absolute;
+    top: 446px;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 124px;
+    font-weight: 500;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.headlineUnloaded {
+    left: -1000px;
+}
+
+.headlineLoaded {
+    left: 200px;
+    transition: left 2s 2000ms;
+}
+
+.photoContainer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.photoContainerUnloaded {
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+}
+
+.photoContainerLoaded {
+    width: calc(100% - 540px);
+    height: calc(100% - 220px);
+    transition: filter 2s, width 2s 2000ms, height 2s 2000ms;
+}
+
+.photo {
+    position: absolute;
+    right: 0;
+    bottom: -220px;
+}

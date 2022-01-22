@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 140px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 100vw;
+    padding-left: 540px;
+    padding-right: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(25, 25, 25, 0.9);
+    
+}
+
+.unloaded {
+    top: -140px;
+}
+
+.loaded {
+    top: 0px;
+    transition: top 2s 2000ms;
+}
+
+.item {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.itemActive {
+    text-decoration: underline;
+}
+  

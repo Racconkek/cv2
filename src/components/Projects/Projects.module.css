@@ -1,0 +1,12 @@
+.projects {
+    display: grid;
+    grid-template-rows: 0% 300px auto;
+    grid-template-columns: 1fr;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    grid-row: 3 / 4;
+    gap: 200px;
+}

@@ -1,0 +1,33 @@
+.technologies {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0% 300px 1fr;
+    grid-column-gap: 100px;
+}
+
+.list {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    padding-left: 540px;
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    font-size: 30px;
+}
+
+.listItem {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 0 0 50px 0;
+}
+
+.namesItem {
+    font-weight: 600;
+    letter-spacing: 0.31em;
+    margin-right: 38px;
+}
+
+.valuesItem {
+    font-weight: 400;
+    margin-left: 38px;
+}
